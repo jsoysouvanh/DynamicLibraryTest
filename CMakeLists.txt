@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.13.5)
 
 project(DynamicLibrary)
 
+# Enable tests
+enable_testing()
+
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON) #TODO: Try without this too
 
 # Information messages about cmake version and compiler
@@ -41,3 +44,5 @@ target_link_libraries(GameLibrary PUBLIC DynamicLibAPI)
 # Executable
 add_executable(Executable main.cpp)
 target_link_libraries(Executable PRIVATE GameLibrary DynamicLibAPI)
+
+add_test(NAME TestMain COMMAND Executable)
