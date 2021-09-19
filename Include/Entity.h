@@ -7,7 +7,7 @@
 class Entity
 {
 	private:
-		REFUREKU_INTERNAL std::string _name;
+		std::string _name;
 	
 	public:
 		REFUREKU_API Entity(std::string const& name) noexcept;

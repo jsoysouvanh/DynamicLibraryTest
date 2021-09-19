@@ -13,7 +13,7 @@ class Database
 	friend EntityRegisterer;
 
 	private:
-		REFUREKU_INTERNAL std::unordered_map<std::string, Entity const*> _entities;
+		std::unordered_map<std::string, Entity const*> _entities;
 
 		REFUREKU_API static Database&	getInternal()							noexcept;
 		REFUREKU_API void				registerEntity(Entity const& entity)	noexcept;
