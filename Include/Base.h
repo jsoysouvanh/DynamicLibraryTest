@@ -10,7 +10,7 @@ class DLL_API Base
 		Base(Base&&)		= default;
 		virtual ~Base()		= default;
 
-		//void DoSomething() const noexcept = 0;
+		virtual void DoSomething() const noexcept = 0;
 
 		Base& operator=(Base const&)	= default;
 		Base& operator=(Base&&)			= default;

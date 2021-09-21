@@ -12,3 +12,7 @@
 //	static Entity entity{"SomeProperty"};
 //	return entity;
 //}
+
+void SomeProperty::DoSomething() const noexcept
+{
+}

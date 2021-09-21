@@ -8,4 +8,5 @@
 class SomeProperty : public Base
 {
 	public:
+		DLL_API virtual void DoSomething() const noexcept override;
 };
