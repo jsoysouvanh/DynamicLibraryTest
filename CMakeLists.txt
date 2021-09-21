@@ -24,11 +24,11 @@ if (MSVC)
 	string(REGEX REPLACE "/W[0-4]" "/W4" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")	# Replace the default flag /W3 by /W4
 	string(REGEX REPLACE "/GR" "/GR-" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")		# Replace the default flag /GR by /GR- to disable RTTI
 else()	# Clang or GCC
-	target_compile_options(DynamicLibAPI PRIVATE -Wall -Wextra -Wpedantic -fno-rtti)
+	target_compile_options(DynamicLibAPI PRIVATE -Wall -Wextra -Wpedantic -fno-rtti -fvisibility=hidden)
 endif()
 
 target_compile_features(DynamicLibAPI PUBLIC cxx_std_17)
-target_compile_definitions(DynamicLibAPI PRIVATE REFUREKU_EXPORT)
+target_compile_definitions(DynamicLibAPI PRIVATE EXPORT_API)
 
 target_include_directories(DynamicLibAPI PUBLIC Include)
 

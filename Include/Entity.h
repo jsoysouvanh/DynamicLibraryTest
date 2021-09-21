@@ -10,7 +10,7 @@ class Entity
 		std::string _name;
 	
 	public:
-		REFUREKU_API Entity(std::string const& name) noexcept;
+		DLL_API Entity(std::string const& name) noexcept;
 
-		REFUREKU_API inline std::string const& getName() const noexcept { return _name; }
+		DLL_API inline std::string const& getName() const noexcept { return _name; }
 };

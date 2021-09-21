@@ -9,6 +9,6 @@ class EntityRegisterer
 		Entity const& _registeredEntity;
 
 	public:
-		REFUREKU_API EntityRegisterer(Entity const& entity) noexcept;
-		REFUREKU_API ~EntityRegisterer()					noexcept;
+		DLL_API EntityRegisterer(Entity const& entity)	noexcept;
+		DLL_API ~EntityRegisterer()						noexcept;
 };

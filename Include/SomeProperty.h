@@ -4,7 +4,7 @@
 #include "EntityRegisterer.h"
 #include "Entity.h"
 
-class REFUREKU_API SomeProperty
+class DLL_API SomeProperty
 {
 	public:
 		static Entity const& staticGetArchetype() noexcept;

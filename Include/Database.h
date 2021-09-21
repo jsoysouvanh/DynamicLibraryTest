@@ -15,13 +15,13 @@ class Database
 	private:
 		std::unordered_map<std::string, Entity const*> _entities;
 
-		REFUREKU_API static Database&	getInternal()							noexcept;
-		REFUREKU_API void				registerEntity(Entity const& entity)	noexcept;
-		REFUREKU_API void				unregisterEntity(Entity const& entity)	noexcept;
+		DLL_API static Database&	getInternal()							noexcept;
+		DLL_API void				registerEntity(Entity const& entity)	noexcept;
+		DLL_API void				unregisterEntity(Entity const& entity)	noexcept;
 
 	public:
-		REFUREKU_API void			printDatabase()						const noexcept;
-		REFUREKU_API Entity const*	getEntity(std::string const& name)	const noexcept;
+		DLL_API void			printDatabase()						const noexcept;
+		DLL_API Entity const*	getEntity(std::string const& name)	const noexcept;
 };
 
 inline Database const& getDatabase() noexcept
