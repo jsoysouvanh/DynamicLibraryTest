@@ -1,16 +1,11 @@
 #pragma once
 
 #include "Config.h"
+#include "Base.h"
 #include "EntityRegisterer.h"
 #include "Entity.h"
 
-class DLL_API SomeProperty
+class SomeProperty : public Base
 {
 	public:
-		static Entity const& staticGetArchetype() noexcept;
 };
-
-//namespace generated
-//{
-//	extern EntityRegisterer registererSomeProperty;
-//}

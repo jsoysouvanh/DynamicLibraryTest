@@ -2,6 +2,7 @@
 
 #include "Database.h"
 #include "GameplayScript.h"
+#include "SomeProperty.h"
 
 int main()
 {
@@ -15,6 +16,8 @@ int main()
 
 	Entity const* gpScript = getDatabase().getEntity("GameplayScript");
 	std::cout << "GameplayScript: " << gpScript << std::endl;
+
+	SomeProperty prop;
 
 	return EXIT_SUCCESS;
 }
