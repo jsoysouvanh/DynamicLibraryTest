@@ -6,11 +6,6 @@
 
 class GAME_API GameplayScript2
 {
-	public:
-		static Entity const& staticGetArchetype() noexcept;
+//	public:
+//		static Entity const& staticGetArchetype() noexcept;
 };
-
-//namespace generated
-//{
-//	extern EntityRegisterer registererGameplayScript2;
-//}

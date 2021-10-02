@@ -2,19 +2,10 @@
 
 #include <iostream>
 
-namespace generated { EntityRegisterer registererGameplayScript = GameplayScript::staticGetArchetype(); }
-
-GameplayScript::GameplayScript() noexcept
-{
-}
-
-Entity const& GameplayScript::staticGetArchetype() noexcept
-{
-	static Entity entity{"GameplayScript"};
-	return entity;
-}
+//namespace generated { EntityRegisterer registererGameplayScript = GameplayScript::staticGetArchetype(); }
 //
-//void someRandomMethod() noexcept
+//Entity const& GameplayScript::staticGetArchetype() noexcept
 //{
-//	std::cout << "Blabla" << std::endl;
+//	static Entity entity{"GameplayScript"};
+//	return entity;
 //}
